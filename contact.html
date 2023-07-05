@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
 </head>
 <body>
+    <main>
+        <h1>Me contacter</h1>
+        <form>
+            <label for="firstname">Firstname ?</label>
+                <input type="text" id="firstname">
+            <br> <br>
+            <label for="lastname">Lastname ?</label>
+                <input type="text" id="lastname">
+            <br> <br>
+            <label>Email :<input type="email" required></label>
+            <br> <br>
+            <label>Birthdate :<input type="date"></label>
+            <br> <br>
+            <label for="why">Pourquoi me contacter?</label>
+                <select name="reasons" id="why">
+                    <option value="">--Veuillez choisir une option--</option>
+                    <option value="mix">Mélange anglais/français intolérable</option>
+                    <option value="style">La page HTML est trop belle</option>
+                    <option value="hamster">Sans raison</option>
+                </select>
+        </form>
+        <br><hr> <br>
+        <fieldset>
+            <legend>Quel est votre genre musical favori (attention au piège):</legend>
+            <input type="radio" id="classique" name="favoriteMusic" value="Classique">
+            <label for="classique">Classique</label>
+            <br>
+            <input type="radio" id="rock" name="favoriteMusic" value="rock">
+            <label for="rock">Rock</label>
+            <br>
+            <input type="radio" id="electro" name="favoriteMusic" value="electro">
+            <label for="electro">Electronique</label>
+            <br>
+            <input type="radio" id="jul" name="favoriteMusic" value="jul">
+            <label for="jul">Ju Ju Juuuuul</label>
+        </fieldset>
+
+        <br><br>
+        <label>Ecrivez votre message:
+            <br><textarea id="message" name="message" rows="5" cols="33" maxlength="500" wrap>Tapez votre message ici...</textarea>
+        </label>
+        <br><br>
+        <input type="submit" value="Valider mon inscription">
+        <br>
+        <label>S'inscrire à la newsletter <input type="checkbox" value="newsletter"></label>
+    </main>
     
 </body>
 </html>
